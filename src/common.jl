@@ -54,7 +54,7 @@ mutable struct Prior
     mu_S::Float64
     mu_T::Float64
     Prior() = (p = new();
-        p.lambda_A = p.lambda_B = p.lambda_C = p.lambda_D = p.lambda_U = p.lambda_V = 1.0;
+        p.lambda_A = p.lambda_B = p.lambda_C = p.lambda_D = p.lambda_U = p.lambda_V = 100.0;
         p.lambda_S = p.lambda_T = 1.0;
         p.mu_S = p.mu_T = 0.0;
         return p
