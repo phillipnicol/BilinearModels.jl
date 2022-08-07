@@ -69,7 +69,7 @@ function infer(Y,X,Z,A,B,C,D,U,V,S,T,omega; prior=Prior(), Offset=0.0*Y)
     F_V_inv = [inv(F_V[j] + p.lambda_V*Identity) for j=1:J]
     F_D_inv = inv(F_D + p.lambda_D*Identity)
     
-    if true
+    if false
         # Compute full matrix for (U,V,Q) only, and propagate uncertainty to A,B,C.
         
         # Uncertainty in U and V
